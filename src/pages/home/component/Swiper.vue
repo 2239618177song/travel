@@ -2,20 +2,13 @@
   <div class="wrapper">
       <swiper ref="mySwiper" :options="swiperOption">
           <!-- slides -->
-          <swiper-slide>
-            <img src="http://img1.qunarzz.com/piao/fusion/1809/47/7599053a2cb2ee02.jpg_750x200_c61be0c1.jpg" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="http://img1.qunarzz.com/piao/fusion/1809/47/7599053a2cb2ee02.jpg_750x200_c61be0c1.jpg" alt="">
-          </swiper-slide>
-          <swiper-slide>
-            <img src="http://img1.qunarzz.com/piao/fusion/1809/47/7599053a2cb2ee02.jpg_750x200_c61be0c1.jpg" alt="">
+          <swiper-slide v-for="item in swiperList" :key="item.id">
+            <img :src="item.imgUrl" alt="">
           </swiper-slide>
           <!-- Optional controls -->
           <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>
   </div>
-  
 </template>
 <script>
 export default {
@@ -28,7 +21,17 @@ export default {
         pagination: {
           el: '.swiper-pagination'
         }
-      }
+      },
+      swiperList: [
+        {
+          id: '001',
+          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1809/47/7599053a2cb2ee02.jpg_750x200_c61be0c1.jpg'
+        },
+        {
+          id: '002',
+          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1809/47/7599053a2cb2ee02.jpg_750x200_c61be0c1.jpg'
+        }
+      ]
     }
   }
 }

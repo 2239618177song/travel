@@ -38,6 +38,9 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .wrapper
+  width:100%
+  height: 0
+  overflow:hidden
   padding-bottom:26.7%
   img
     width:100%

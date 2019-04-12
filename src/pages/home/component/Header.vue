@@ -6,9 +6,11 @@
     <div class="header-center">
       <i class="iconfont icon-search"></i>&nbsp;&nbsp;输入城市/景点/酒店/主题
     </div>
-    <div class="header-right">
-      <div>城市<i class="iconfont icon-down"></i></div>
-    </div>
+    <router-link  to="/city">
+      <div class="header-right">
+        <div>城市<i class="iconfont icon-down"></i></div>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -46,4 +48,5 @@ export default {
     min-width:1.1rem
     text-align:center
     padding:0 .1rem
+    color:#ffffff
 </style>

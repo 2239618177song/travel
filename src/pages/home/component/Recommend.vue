@@ -2,14 +2,14 @@
   <div class="recommend">
     <div class="recommend-header">热门推荐</div>
     <ul>
-      <li class="recommend-items">
+      <router-link tag="li" to="/city" class="recommend-items">
         <img class="item-img" src="http://img1.qunarzz.com/sight/p0/1701/6c/6c5e1f8fa365adada3.img.png_150x150_958dfbec.png">
         <div class="item-info">
           <p class="title">我是标题</p>
           <p class="desc">我是描述</p>
           <button class="detail-btn">查看详情</button>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
